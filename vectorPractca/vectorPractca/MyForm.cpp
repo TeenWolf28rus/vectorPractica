@@ -3,12 +3,10 @@
 using namespace System;
 using namespace System::Windows::Forms;
 
-[STAThread]
-void main(array<String^>^ arg) {
+[STAThreadAttribute]
+void main(array<String^>^ args) {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	
-	
-	vectorPractca::MyForm form; //WinFormsTest - имя вашего проекта
+	vectorPractca::MyForm form;
 	Application::Run(%form);
 }
